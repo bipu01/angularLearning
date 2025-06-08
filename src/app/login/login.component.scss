@@ -1,0 +1,60 @@
+.feed-contents {
+  background: rgb(209, 254, 198);
+  box-shadow: 2px 0 8px 1px rgba(0, 0, 0, 0.245);
+  padding: 32px;
+  width: 40vw;
+  height: 50vh;
+  border-radius: 12px;
+  margin-left: 30vw;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+button {
+  padding: 12px 8px;
+  border: none;
+  border-radius: 12px;
+  background: #000;
+  color: white;
+
+}
+
+label {
+  display: flex;
+  gap: 10%;
+  align-items: center;
+  width: 100%;
+
+}
+
+p {
+  width: 40%;
+}
+
+
+.warningMsg {
+  font-size: 15px;
+  color: rgb(139, 30, 30);
+  width: 100%;
+}
+
+.form-holder {
+  padding: 24px;
+  width: 50%;
+  margin-left: 25%;
+
+}
+
+.form-inputs-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

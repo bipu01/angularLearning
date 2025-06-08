@@ -1,0 +1,20 @@
+* {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  background: #233749;
+  gap: 5%;
+}
+
+a {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,49 @@
+<!-- <div class="feed-contents"> -->
+<!-- <label>
+    <p>
+      Email:
+    </p>
+    <input type="email" placeholder="example@gmail.com" id="email" formControlName="email" />
+  </label> -->
+
+<nb-card class="form-holder">
+  <form [formGroup]="loginForm" (ngSubmit)="submitHandler()">
+
+    <h2>Login:</h2>
+    <nb-card-body class="example-items-col form-inputs-buttons">
+      <label>
+        <p>
+          Email:
+        </p>
+        <input type="email" placeholder="example@gmail.com" id="email" formControlName="email" nbInput fullWidth
+          shape="round">
+      </label>
+      <p class="warningMsg">{{msgForEmail}}</p>
+
+      <label>
+        <p>
+          Password
+        </p>
+        <input type="password" placeholder="Gie&3#ng" id="password" formControlName="password" nbInput fullWidth
+          shape="round">
+      </label>
+      <p class="warningMsg">{{msgForPassword}}</p>
+
+
+      <button *ngIf="!isSuccess" nbButton fullWidth status="primary" id="submitButton" type="submit">Login</button>
+      <button *ngIf="isSuccess" nbButton fullWidth status="success" id="submitButton" type="submit">Success</button>
+
+    </nb-card-body>
+  </form>
+</nb-card>
+
+
+<!-- <label>
+      <p>
+        Password:
+      </p>
+      <input type="password" placeholder="Gie&3#ng" id="password" formControlName="password">
+    </label> -->
+
+
+<!-- </div> -->
